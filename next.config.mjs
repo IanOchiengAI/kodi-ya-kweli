@@ -14,10 +14,12 @@ const nextConfig = {
               "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: blob:",
-              "font-src 'self'",
-              // In production: no outbound connections (privacy guarantee).
+              "font-src 'self' data:",
+              // Client-side PDF generation via @react-pdf/renderer requires fetching in-memory WebAssembly/data blobs.
               // In dev: allow localhost WebSocket for webpack HMR.
-              isProd ? "connect-src 'none'" : "connect-src 'self' ws://localhost:*",
+              isProd
+                ? "connect-src 'self' data: blob:"
+                : "connect-src 'self' data: blob: ws://localhost:*",
               "form-action 'none'",
             ].join('; '),
           },
