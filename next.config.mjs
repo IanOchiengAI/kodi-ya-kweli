@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   async headers() {
     return [
@@ -13,7 +15,9 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline'",
               "img-src 'self' data: blob:",
               "font-src 'self'",
-              "connect-src 'none'",
+              // In production: no outbound connections (privacy guarantee).
+              // In dev: allow localhost WebSocket for webpack HMR.
+              isProd ? "connect-src 'none'" : "connect-src 'self' ws://localhost:*",
               "form-action 'none'",
             ].join('; '),
           },
