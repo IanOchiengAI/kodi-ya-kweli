@@ -274,6 +274,32 @@ ${LEGAL_DISCLAIMER}
           {LEGAL_DISCLAIMER}
         </div>
       </div>
+
+      {/* Success Story CTA */}
+      <div className='bg-gradient-to-br from-emerald-50 to-emerald-100/60 border border-emerald-200 rounded-xl p-6 flex flex-col md:flex-row items-start md:items-center gap-5'>
+        <div className='w-12 h-12 rounded-full bg-emerald-600 text-white flex items-center justify-center shrink-0 text-xl font-bold'>
+          🏆
+        </div>
+        <div className='flex-1 space-y-1'>
+          <h4 className='font-display font-bold text-gray-950 text-sm'>
+            Did this letter help you recover your deposit?
+          </h4>
+          <p className='text-xs text-emerald-900/80 leading-relaxed'>
+            Your story can protect other Kenyan tenants. If this letter helped you recover your deposit — even partially — let us know. Anonymous stories build public trust in Kenyan tenants&apos; legal rights.
+          </p>
+        </div>
+        <a
+          href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+            'I recovered my security deposit using Kodi Ya Kweli\'s free demand letter generator. If your landlord is withholding your deposit unfairly, try it here: https://kodi-ya-kweli.vercel.app/toolkit/deposit-demand'
+          )}`}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='shrink-0 px-4 py-2.5 bg-emerald-700 text-white text-xs font-bold rounded-lg hover:bg-emerald-800 inline-flex items-center gap-2 transition-all shadow-sm'
+        >
+          <Share2 className='w-3.5 h-3.5' />
+          <span>Share Your Story</span>
+        </a>
+      </div>
     </div>
   );
 };
