@@ -123,7 +123,7 @@ export const Footer = () => {
         </div>
 
         <div className='mt-8 pt-6 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-500'>
-          <p>© {currentYear} Kodi Ya Kweli. Part of the Next Websites Series by Ian Ochieng.</p>
+          <p>© {currentYear} Kodi Ya Kweli. Built by Ian Ochieng.</p>
           <p className='flex items-center gap-1'>
             Built for Kenyan Renters · Powered by Open Data
           </p>

@@ -7,7 +7,7 @@
 
 > **Kodi Ya Kweli** (*Swahili for "Real Rent"*) is an open-source civic technology platform engineered to bring radical pricing transparency to Nairobi's residential rental market and empower urban tenants with self-help legal defense tools.
 
-Part of the **[Next Websites Series](https://github.com/IanOchiengAI)** by Ian Ochieng.
+An open-source civic technology initiative built by **[Ian Ochieng](https://github.com/IanOchiengAI)**.
 
 ---
 
@@ -20,7 +20,7 @@ Following an extensive market and statutory audit in September 2026, the project
 2. **KRA 7.5% Monthly Rental Income (MRI) Tax Paranoia** (avoiding landlord hostility from building-level whistleblower exposure).
 
 ### Core Solution Architecture:
-1. **Programmatic Estate Cost-of-Living Index:** Objective, neighborhood-level baseline aggregates (Kilimani, Westlands, Roysambu, Ruaka, Ongata Rongai, Kasarani, South B/C) tracking transacted rent bands, sub-meter token resale markups, water rationing schedules, and upfront deposit capital.
+1. **Programmatic Estate Cost-of-Living Index:** Objective, neighborhood-level baseline aggregates (Kilimani, Westlands, Roysambu, Ruaka, Ongata Rongai, Kasarani, South B/C, Juja, Waiyaki Way, Fedha/Embakasi, Lower Kabete) tracking transacted rent bands, sub-meter token resale markups, water rationing schedules, and upfront deposit capital.
 2. **Zero-Server Privacy Tenant Defense Toolkit:**
    - **Deposit Demand Letter Generator:** Formatted under the Law of Contract Act (Cap 23) and Small Claims Court Act (Cap 10A) with statutory 14-day pre-action deadlines.
    - **Total Cost of Tenancy (TCT) Calculator:** Real out-of-pocket housing expenditure simulator factoring in sub-meter markups and transit.

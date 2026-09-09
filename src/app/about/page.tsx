@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className='border-b border-gray-200 pb-8 space-y-3'>
         <div className='inline-flex items-center gap-2 bg-emerald-100/80 text-emerald-900 px-3 py-1 rounded-full text-xs font-semibold'>
           <Scale className='w-4 h-4 text-brand-green' />
-          <span>Next Websites Series · Project #1</span>
+          <span>Open-Source Civic Tech · Built by Ian Ochieng</span>
         </div>
         <h1 className='font-display font-extrabold text-3xl md:text-5xl text-gray-950 tracking-tight'>
           About Kodi Ya Kweli
@@ -99,13 +99,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Open Source & Series Context */}
+      {/* Open Source & Initiative Context */}
       <section className='bg-gray-50 border border-gray-200 rounded-2xl p-6 md:p-8 space-y-4 text-xs text-gray-700'>
         <h2 className='font-display font-bold text-xl text-gray-900'>
-          Part of the Next Websites Series
+          Open Source Civic Technology
         </h2>
         <p className='leading-relaxed'>
-          Kodi Ya Kweli is Build #1 of an open-source civic technology initiative by <strong>Ian Ochieng</strong>, exploring high-leverage software solutions to ground-truth African infrastructure gaps.
+          Kodi Ya Kweli is an open-source civic technology initiative built by <strong>Ian Ochieng</strong>, exploring high-leverage software solutions to ground-truth African infrastructure and housing transparency gaps.
         </p>
         <div className='pt-2 flex flex-wrap gap-4'>
           <a
