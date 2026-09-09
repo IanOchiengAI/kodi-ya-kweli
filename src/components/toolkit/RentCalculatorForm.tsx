@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { ESTATES } from '@/data/estates';
 import { formatKSh, calcTCT } from '@/lib/utils';
-import { Calculator, Zap, Droplets, Bus, ArrowUpRight, CheckCircle2 } from 'lucide-react';
+import { Calculator, Zap, Droplets, Bus, ArrowUpRight, CheckCircle2, Share2 } from 'lucide-react';
 
 export const RentCalculatorForm = () => {
   const [selectedEstateSlug, setSelectedEstateSlug] = useState(ESTATES[0].slug);
@@ -232,6 +232,18 @@ export const RentCalculatorForm = () => {
         <div className='p-4 bg-emerald-800/50 rounded-lg border border-emerald-700/60 text-xs text-emerald-100/90 leading-relaxed'>
           <strong>Ground Reality Insight:</strong> When comparing apartments in Ruaka (lower rent + high commute + borehole) vs. Westlands (higher rent + lower commute), the Total Cost of Tenancy is often within 10% of each other. Always run the full numbers before signing.
         </div>
+
+        <a
+          href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+            `In ${selectedEstate.name}, real monthly tenancy costs around ${formatKSh(totalMonthlyCost)}/mo (${overheadPercentage}% above advertised rent due to token and water markups). Calculate your true rent before signing: https://kodi-ya-kweli.vercel.app/toolkit/fair-rent-calculator`
+          )}`}
+          target='_blank'
+          rel='noopener noreferrer'
+          className='w-full py-2.5 px-4 text-xs font-semibold text-emerald-950 bg-emerald-100 hover:bg-white rounded-lg flex items-center justify-center gap-2 transition-all shadow-sm'
+        >
+          <Share2 className='w-4 h-4 text-emerald-800' />
+          <span>Share Calculation on WhatsApp</span>
+        </a>
       </div>
     </div>
   );

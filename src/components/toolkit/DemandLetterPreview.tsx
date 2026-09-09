@@ -13,7 +13,7 @@ import {
   WEAR_AND_TEAR_CLAUSE,
   LEGAL_DISCLAIMER,
 } from '@/data/legalTemplates';
-import { Download, Printer, CheckCircle, ShieldCheck, Copy } from 'lucide-react';
+import { Download, Printer, CheckCircle, ShieldCheck, Copy, Share2 } from 'lucide-react';
 
 const PDFDownloadLink = dynamic(
   () => import('@react-pdf/renderer').then((mod) => mod.PDFDownloadLink),
@@ -141,6 +141,18 @@ ${LEGAL_DISCLAIMER}
               <span>Download Official PDF</span>
             </PDFDownloadLink>
           )}
+
+          <a
+            href={`https://api.whatsapp.com/send?text=${encodeURIComponent(
+              'Habari! If your landlord is delaying your deposit refund or making unfair deductions, generate a formal Kenyan legal demand letter for free here: https://kodi-ya-kweli.vercel.app/toolkit/deposit-demand'
+            )}`}
+            target='_blank'
+            rel='noopener noreferrer'
+            className='px-3 py-2 text-xs font-semibold text-emerald-800 bg-emerald-100/90 border border-emerald-300 rounded-lg hover:bg-emerald-200 inline-flex items-center gap-1.5 transition-all'
+          >
+            <Share2 className='w-3.5 h-3.5 text-emerald-700' />
+            <span>Share on WhatsApp</span>
+          </a>
         </div>
       </div>
 
