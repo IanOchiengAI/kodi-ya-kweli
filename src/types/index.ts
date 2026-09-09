@@ -34,7 +34,7 @@ export type CommuteProfile = {
 export type Estate = {
   slug: string;
   name: string;                    // Display name
-  zone: 'central-west' | 'central' | 'north' | 'north-west' | 'south-west' | 'north-east' | 'south';
+  zone: 'central-west' | 'central' | 'north' | 'north-west' | 'south-west' | 'north-east' | 'south' | 'east' | 'south-east';
   tier: 'budget' | 'mid-range' | 'upper-mid' | 'premium';
   tagline: string;                 // One-line editorial description for cards
   profileSummary: string;          // 2–3 sentence editorial summary for estate page hero

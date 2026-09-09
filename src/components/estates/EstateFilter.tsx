@@ -63,13 +63,14 @@ export const EstateFilter: React.FC<{ estates: Estate[] }> = ({ estates }) => {
               className='w-full py-2.5 px-3 text-sm bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-emerald-500 text-gray-700'
             >
               <option value='all'>All Nairobi Zones</option>
-              <option value='central-west'>Central West (Kilimani)</option>
+              <option value='central-west'>Central West (Kilimani / Waiyaki Way)</option>
               <option value='central'>Central (Westlands)</option>
               <option value='north'>North (Roysambu)</option>
-              <option value='north-west'>North West (Ruaka)</option>
+              <option value='north-west'>North West (Ruaka / Lower Kabete)</option>
               <option value='south-west'>South West (Rongai)</option>
-              <option value='north-east'>North East (Kasarani)</option>
+              <option value='north-east'>North East (Kasarani / Juja)</option>
               <option value='south'>South (South B / C)</option>
+              <option value='east'>East (Fedha / Embakasi)</option>
             </select>
           </div>
 

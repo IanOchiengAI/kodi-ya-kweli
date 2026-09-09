@@ -74,7 +74,7 @@ export const ESTATES: Estate[] = [
       brtOrRailAvailable: false,
     },
     groundRealityNote:
-      'Offering to pay via direct bank standing order signals a reliable tenant and dramatically improves your negotiating position. Always ask: \"Is this the best price for a direct monthly bank transfer?\" Expatriate corporate demand has softened since 2024.',
+      'Offering to pay via direct bank standing order signals a reliable tenant and dramatically improves your negotiating position. Always ask: "Is this the best price for a direct monthly bank transfer?" Expatriate corporate demand has softened since 2024.',
     updatedAt: '2026-09',
   },
   {
@@ -271,6 +271,164 @@ export const ESTATES: Estate[] = [
     },
     groundRealityNote:
       'Before signing, ask neighbours about weekly water availability and whether the building has adequate rooftop and ground storage tanks to buffer during rationing days.',
+    updatedAt: '2026-09',
+  },
+  {
+    slug: 'juja',
+    name: 'Juja / Kenyatta Road / JKUAT',
+    zone: 'north-east',
+    tier: 'budget',
+    tagline: 'University town with a split market — students pay 40% more than savvy long-term tenants.',
+    profileSummary:
+      'Juja straddles two very different rental markets: a dense student cluster around JKUAT and Juja town centre with bedsitters at KSh 3,000–10,000, and a growing middle-income corridor along Kenyatta Road with gated 1BR–2BR apartments targeting Nairobi commuters. The 30 km Thika Superhighway journey is fast off-peak but brutal during morning rush. New constructions with borehole backup are rising fast along Juja Farm Road and Sukari Estate.',
+    askingRent: {
+      bedsitter: { min: 8000, max: 14000 },
+      oneBR: { min: 16000, max: 28000 },
+      twoBR: { min: 28000, max: 45000 },
+    },
+    transactedRent: {
+      bedsitter: { min: 6500, max: 11000 },
+      oneBR: { min: 13000, max: 22000 },
+      twoBR: { min: 23000, max: 36000 },
+    },
+    utilities: {
+      kplcRetailRateKSh: 28,
+      landlordResaleRateKSh: 35,
+      waterRationingDaysPerWeek: 3,
+      boreholeWater: true,
+      serviceChargeRange: { min: 800, max: 2500 },
+    },
+    deposit: {
+      monthsRentRequired: 1,
+      waterDepositKSh: { min: 1500, max: 3000 },
+      electricityDepositKSh: { min: 1500, max: 3000 },
+      keyDepositKSh: 500,
+    },
+    commute: {
+      matatuToCBD_peak: { min: 80, max: 150 },
+      matatuToCBD_offpeak: { min: 50, max: 90 },
+      brtOrRailAvailable: false,
+    },
+    groundRealityNote:
+      'Avoid letting landlords quote you "student rate" prices — if you are a working professional, present as a long-term tenant and negotiate 15–20% below asking. Always factor in KSh 8,000–15,000/month in Thika Road matatu fare before deciding on Juja vs a slightly pricier Kasarani or Roysambu unit. Morning rush Juja–CBD can exceed 2.5 hours.',
+    updatedAt: '2026-09',
+  },
+  {
+    slug: 'waiyaki-way',
+    name: 'Waiyaki Way / Westlands Corridor',
+    zone: 'central-west',
+    tier: 'mid-range',
+    tagline: 'Westlands adjacent pricing at a 15% discount — watch the service charge small print.',
+    profileSummary:
+      'The Waiyaki Way corridor from Westlands through Mountain View, Kangemi, and towards Kikuyu has emerged as a significant mid-range rental zone. It offers proximity to the Westlands business hub and GTC at 10–20% lower rents than prime Westlands, attracting young professionals priced out of Kilimani. Many complexes here have modern amenities but bury significant costs in service charges (KSh 5,000–12,000/month) that are not disclosed upfront.',
+    askingRent: {
+      oneBR: { min: 45000, max: 75000 },
+      twoBR: { min: 75000, max: 120000 },
+    },
+    transactedRent: {
+      oneBR: { min: 38000, max: 62000 },
+      twoBR: { min: 62000, max: 100000 },
+    },
+    utilities: {
+      kplcRetailRateKSh: 28,
+      landlordResaleRateKSh: 33,
+      waterRationingDaysPerWeek: 2,
+      boreholeWater: false,
+      serviceChargeRange: { min: 5000, max: 12000 },
+    },
+    deposit: {
+      monthsRentRequired: 2,
+      waterDepositKSh: { min: 3000, max: 5000 },
+      electricityDepositKSh: { min: 3000, max: 5000 },
+      keyDepositKSh: 1000,
+    },
+    commute: {
+      matatuToCBD_peak: { min: 50, max: 90 },
+      matatuToCBD_offpeak: { min: 30, max: 55 },
+      brtOrRailAvailable: false,
+    },
+    groundRealityNote:
+      'Always ask for the total monthly cost inclusive of service charge — many landlords quote rent exclusive of a KSh 8,000–12,000 service charge, making actual out-of-pocket costs equivalent to mid-Westlands. Negotiate the rent itself down 12% from asking, and push to cap the service charge in writing. Waiyaki Way traffic is severe westbound during evening rush — test your commute direction before signing.',
+    updatedAt: '2026-09',
+  },
+  {
+    slug: 'fedha-tassia',
+    name: 'Fedha / Tassia / Embakasi',
+    zone: 'east',
+    tier: 'mid-range',
+    tagline: 'JKIA-adjacent value corridor — reliable matatu links but factor in 3-day water rationing.',
+    profileSummary:
+      "Fedha Estate and Tassia in Embakasi form one of Nairobi's most consistent mid-range rental belts, located 12–14 km from the CBD. They attract airport staff, EPZ workers, and civil servants. The original Fedha Phase 1 and Phase 2 gated blocks offer quieter environments, while newer mid-rises (Fedha Park, 90 Degrees, Iman Heights) include elevators and backup generators. Matatu routes 33 and 34 provide reliable CBD connectivity.",
+    askingRent: {
+      bedsitter: { min: 9000, max: 16000 },
+      oneBR: { min: 16000, max: 28000 },
+      twoBR: { min: 30000, max: 55000 },
+    },
+    transactedRent: {
+      bedsitter: { min: 7500, max: 13000 },
+      oneBR: { min: 13000, max: 23000 },
+      twoBR: { min: 25000, max: 45000 },
+    },
+    utilities: {
+      kplcRetailRateKSh: 28,
+      landlordResaleRateKSh: 35,
+      waterRationingDaysPerWeek: 3,
+      boreholeWater: true,
+      serviceChargeRange: { min: 1500, max: 5000 },
+    },
+    deposit: {
+      monthsRentRequired: 1,
+      waterDepositKSh: { min: 2000, max: 4000 },
+      electricityDepositKSh: { min: 2000, max: 4000 },
+      keyDepositKSh: 500,
+    },
+    commute: {
+      matatuToCBD_peak: { min: 50, max: 90 },
+      matatuToCBD_offpeak: { min: 30, max: 55 },
+      brtOrRailAvailable: false,
+    },
+    groundRealityNote:
+      'Fedha has two distinct submarkets: the quieter gated Phases 1 and 2, and the busier Church Road / Tassia strip. For the gated phases, deal directly with the management company — brokers add KSh 2,000–4,000. For newer mid-rises, compare total monthly cost (rent + service charge + token rates) across buildings before signing.',
+    updatedAt: '2026-09',
+  },
+  {
+    slug: 'lower-kabete',
+    name: 'Lower Kabete / Loresho',
+    zone: 'north-west',
+    tier: 'mid-range',
+    tagline: 'Quiet professional enclave — limited public transit is the hidden cost to budget for.',
+    profileSummary:
+      "Lower Kabete Road and the adjacent Loresho ridge offer a rare combination of serenity, security, and proximity to Westlands — popular with NGO workers, university lecturers, and small families. Supply is tighter than most Nairobi corridors because older houses are not being demolished for high-density development at the same pace as Kilimani or Ruaka. Fewer available units means landlord bargaining power is stronger here than the wider market average.",
+    askingRent: {
+      oneBR: { min: 22000, max: 38000 },
+      twoBR: { min: 40000, max: 70000 },
+      threeBR: { min: 65000, max: 110000 },
+    },
+    transactedRent: {
+      oneBR: { min: 18000, max: 32000 },
+      twoBR: { min: 33000, max: 58000 },
+      threeBR: { min: 55000, max: 90000 },
+    },
+    utilities: {
+      kplcRetailRateKSh: 28,
+      landlordResaleRateKSh: 32,
+      waterRationingDaysPerWeek: 2,
+      boreholeWater: false,
+      serviceChargeRange: { min: 3000, max: 8000 },
+    },
+    deposit: {
+      monthsRentRequired: 2,
+      waterDepositKSh: { min: 2500, max: 5000 },
+      electricityDepositKSh: { min: 2500, max: 5000 },
+      keyDepositKSh: 1000,
+    },
+    commute: {
+      matatuToCBD_peak: { min: 60, max: 100 },
+      matatuToCBD_offpeak: { min: 35, max: 60 },
+      brtOrRailAvailable: false,
+    },
+    groundRealityNote:
+      "Lower Kabete's matatu network is sparse — routes 23 and 48 pass but frequency drops sharply past 9 PM. If you depend on public transport, factor in the inconvenience before signing. For those with private vehicles or remote-work flexibility, it offers better value-per-square-metre than comparable Kilimani units at 20–30% lower price. Negotiate a 2-year lease in exchange for a 10% discount — landlords here value long-term, quiet tenants.",
     updatedAt: '2026-09',
   },
 ];
